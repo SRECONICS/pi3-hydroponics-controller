@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 80">
+  <rect width="800" height="80" fill="#0d1117" rx="8"/>
+  <style>
+    text { font-family: 'Courier New', monospace; fill: #39d353; font-size: 22px; }
+    .cursor { animation: blink 0.8s step-end infinite; }
+    @keyframes blink { 50% { opacity: 0; } }
+    .line1 { animation: typing1 2s steps(38, end) forwards; overflow: hidden; white-space: nowrap; }
+    .line2 { animation: typing2 2s steps(36, end) 2.2s forwards; overflow: hidden; white-space: nowrap; opacity: 0; }
+    @keyframes typing1 { from { width: 0; } to { width: 100%; } }
+    @keyframes typing2 { from { width: 0; opacity: 1; } to { width: 100%; opacity: 1; } }
+  </style>
+  <text x="20" y="35">
+    <tspan class="line1">🌱 Automated Hydroponics Controller</tspan>
+  </text>
+  <text x="20" y="65" fill="#8b949e" font-size="16">
+    <tspan class="line2">pH/EC Sensing · Peristaltic Dosing · Flask Dashboard · Pi 3</tspan>
+  </text>
+  <text class="cursor" x="760" y="65" fill="#39d353">█</text>
+</svg>

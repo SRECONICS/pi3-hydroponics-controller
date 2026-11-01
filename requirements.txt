@@ -1,0 +1,5 @@
+flask>=3.0
+RPi.GPIO>=0.7.1
+spidev>=3.6
+adafruit-circuitpython-dht>=4.0
+requests>=2.31

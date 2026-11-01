@@ -1,0 +1,21 @@
+[Unit]
+Description=Raspberry Pi 3 Hydroponics Controller
+Documentation=https://github.com/sreconics/pi3-hydroponics-controller
+After=network.target
+
+[Service]
+Type=simple
+User=pi
+WorkingDirectory=/home/pi/pi3-hydroponics-controller/src
+ExecStart=/usr/bin/python3 main.py
+Restart=on-failure
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+Environment=PYTHONUNBUFFERED=1
+
+# Override these in /etc/default/hydroponics or set in environment
+EnvironmentFile=-/etc/default/hydroponics
+
+[Install]
+WantedBy=multi-user.target
